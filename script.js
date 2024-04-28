@@ -1,5 +1,5 @@
 const links = [...document.querySelectorAll('.nav-link')]
-const navText = ['Home', 'About Us', 'Projects', 'Documentation','Contact']
+const navText = ['Home', 'About Us', 'Projects', 'Docs','Contact']
 const navImg = document.querySelector('.navbar-img')
 
 links.forEach((link, i) => {
