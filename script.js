@@ -13,3 +13,11 @@ links.forEach((link, i) => {
         navImg.style.transform = `translate(${link.dataset.position}%, -50%) rotate(${link.dataset.position * 8}deg)`
     })
 })
+
+const nav = document.querySelector('.navbar')
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+
+hamburgerMenu.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle('active')
+    nav.classList.toggle('active')
+})
