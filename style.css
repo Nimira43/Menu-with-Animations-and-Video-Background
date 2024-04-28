@@ -46,3 +46,42 @@ body {
     transform: translate(0, -50%);
     opacity: 0.2;
 }
+
+.nav-link {
+    font-size: clamp(3.5rem, 10cqi, 10rem);
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.2rem;
+}
+
+.nav-link:hover {
+    transform: translateX(-2rem);
+    transition: transform 0.3s;
+}
+
+.nav-link span {
+    display: inline-block;
+    color: orangered;
+    text-shadow: 1px 1px 0 black,
+                 2px 2px 0 beige,
+                 3px 3px 0 darkgoldenrod;
+    transform: translateX(0);
+}
+
+.nav-link:hover span {
+    animation: letterAnim 0.5s calc(var(--i) + 0.2s) forwards;
+}
+
+@keyframes letterAnim {
+    0% {
+        transform: translate(0, 0);
+        color: orangered;
+    }
+    50% {
+        color: darkred;
+    }
+    100% {
+        transform: translate(2rem, 0);
+        color: darkorange;
+    }
+}
