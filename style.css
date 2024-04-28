@@ -45,6 +45,7 @@ body {
     top: 50%;
     transform: translate(0, -50%);
     opacity: 0.2;
+    transition: transform 1.5s
 }
 
 .nav-link {
